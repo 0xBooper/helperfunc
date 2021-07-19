@@ -1,0 +1,9 @@
+{
+  "name": "helperfunc",
+  "version": "1.0.0",
+  "description": "A collection of useful helper functions, able to be used in any circumstance.",
+  "main": "index.js",
+  "repository": "https://github.com/0xBooper/helperfunc.git",
+  "author": "0xBooper <77999320+0xBooper@users.noreply.github.com>",
+  "license": "GPLv3"
+}
