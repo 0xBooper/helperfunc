@@ -1,0 +1,5 @@
+# ignore node modules (obs)
+node_modules
+
+# Ignore any built files
+lib
