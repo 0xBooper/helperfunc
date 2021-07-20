@@ -1,4 +1,7 @@
 # helperfunc
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/0xBooper/helperfunc/main?label=version&logo=npm&style=flat-square)
+
+
 A collection of handy helper functions.
 
 Some of these functions are:
