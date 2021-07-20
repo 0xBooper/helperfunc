@@ -1,18 +1,19 @@
 # helperfunc
 A collection of handy helper functions.
 
-These some of these functions are:
-    - A function that generates a random string based on a given length (`randomString(length: number)`)
-    - A function that gets the last element of a given array (`lastElementOfArray(array)`)
-    - A function that generates a random true/false bool, based on a given single digit probability (`randomBool(singleDigitProbability: number)`)
-    - ...and more to come!
+Some of these functions are:
+
+- A function that generates a random string based on a given length (`randomString(lengthOfString: number)`)
+- A function that gets the last element of a given array (`lastElementOfArray(array)`)
+- A function that generates a random true/false bool, based on a given single digit probability (`randomBool(singleDigitProbability: number)`)
+- ...and more to come!
 
 Because this is all built in Typescript, you'll get useful intellisense and IDE documentation! (if you use an IDE that has those)
 However, this will still work in Javascript.
 
 # Examples of usage:
 
-(javascript up ahead)
+Javascript Example:
 ```javascript
     // Get a random true or false value, then return a integer based upon that. 
     
@@ -27,7 +28,7 @@ However, this will still work in Javascript.
     console.log(kewlInteger) // Log it!
 ```
 
-(typescript up ahead)
+Typescript Example:
 ```typescript
     // Get a random string, then log it.
     
