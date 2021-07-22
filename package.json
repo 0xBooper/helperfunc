@@ -7,6 +7,7 @@
         "lib/**/*"
     ],
     "scripts": {
+        "test": "jest --config jestconfig.json",
         "build": "tsc",
         "start:dev": "ts-node-dev --watch src/index.ts",
         "prepare": "npm run build",
