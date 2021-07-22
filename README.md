@@ -1,3 +1,7 @@
+# WARNING:
+This repo is under development. It hasn't been published to the NPM registry (unless this readme changes)
+and as of now, it doesn't have base functions and stuff. Once ready, it'll be published and then, yay!
+
 # helperfunc
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/0xBooper/helperfunc/main?label=version&logo=npm&style=flat-square)
 
