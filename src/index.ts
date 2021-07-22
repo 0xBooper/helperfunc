@@ -1,13 +1,8 @@
-// Import stuff needed to import the helper functions
-import { readdirSync } from "fs"
-import { join } from "path"
+// Import all the functions
+import randomBool from "./functions/randomBool"
 
-const functionsFolder = readdirSync(join(__dirname, "functions")) // Get the functions folder
-const functionsToExport: string[] = []
+// Make a object with all the functions
+const functions = {randomBool}
 
-// For each file in the functions folder, import() it.
-for (const functionFile of functionsFolder) {
-   functionsToExport.push(functionFile) 
-}
-
-export default functionsToExport // Export the array of functions
+// Export it!
+export default functions
