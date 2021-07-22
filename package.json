@@ -1,9 +1,27 @@
 {
-  "name": "helperfunc",
-  "version": "1.0.0",
-  "description": "A collection of useful helper functions, able to be used in any circumstance.",
-  "main": "index.js",
-  "repository": "https://github.com/0xBooper/helperfunc.git",
-  "author": "0xBooper <77999320+0xBooper@users.noreply.github.com>",
-  "license": "GPLv3"
+    "name": "helperfunc",
+    "version": "1.0.0",
+    "description": "A collection of useful helper functions, able to be used in any circumstance.",
+    "main": "lib/index.js",
+    "files": [
+        "lib/**/*"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "start:dev": "ts-node-dev --watch src/index.ts",
+        "prepare": "npm run build",
+        "prepublishOnly": "npm test"
+    },
+    "repository": "https://github.com/0xBooper/helperfunc.git",
+    "author": "0xBooper <77999320+0xBooper@users.noreply.github.com>",
+    "license": "GPL-3.0-only",
+    "devDependencies": {
+        "@types/jest": "^26.0.24",
+        "@types/node": "^16.4.0",
+        "jest": "^27.0.6",
+        "ts-jest": "^27.0.3",
+        "ts-node-dev": "^1.1.8",
+        "typescript": "^4.3.5"
+    },
+    "dependencies": {}
 }
