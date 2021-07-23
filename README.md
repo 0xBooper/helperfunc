@@ -1,17 +1,18 @@
 # WARNING:
-This repo is under development. It hasn't been published to the NPM registry (unless this readme changes)
-and as of now, it doesn't have base functions and stuff. Once ready, it'll be published and then, yay!
+
+This repo is under development. Two of the three promised functions have not been implemented yet.
+They will be in the close future. The list of things to do is in the Github projects tab.
 
 # helperfunc
-![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/0xBooper/helperfunc/main?label=version&logo=npm&style=flat-square)
 
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/0xBooper/helperfunc/main?label=version&logo=npm&style=flat-square)
 
 A collection of handy helper functions.
 
 Some of these functions are:
 
-- A function that generates a random string based on a given length (`randomString(lengthOfString: number)`)
-- A function that gets the last element of a given array (`lastElementOfArray(array)`)
+- A function that generates a random string based on a given length (`randomString(lengthOfString: number)`) (**not added yet**)
+- A function that gets the last element of a given array (`lastElementOfArray(array)`) (**not added yet**)
 - A function that generates a random true/false bool, based on a given single digit probability (`randomBool(singleDigitProbability: number)`)
 - ...and more to come!
 
@@ -21,31 +22,33 @@ However, this will still work in Javascript.
 # Examples of usage:
 
 Javascript Example:
+
 ```javascript
-    // Get a random true or false value, then return a integer based upon that. 
-    
-    // Import the NEEDED function
-    const { randomBool } = require("helperfunc") // CommonJS syntax
-    // import { randomBool } from "helperfunc" // ES6 import/export syntax
+// Get a random true or false value, then return a integer based upon that.
 
-    const randomBoolean = randomBool(5) // 5 is the given probability.
+// Import the NEEDED function
+const { randomBool } = require("helperfunc"); // CommonJS syntax
+// import { randomBool } from "helperfunc" // ES6 import/export syntax
 
-    const kewlInteger = randomBoolean ? 1 : 0 // If randomBoolean is true, make kewlInteger 1, otherwise, make it 0.
+const randomBoolean = randomBool(5); // 5 is the given probability.
 
-    console.log(kewlInteger) // Log it!
+const kewlInteger = randomBoolean ? 1 : 0; // If randomBoolean is true, make kewlInteger 1, otherwise, make it 0.
+
+console.log(kewlInteger); // Log it!
 ```
 
 Typescript Example:
+
 ```typescript
-    // Get a random string, then log it.
-    
-    // Import the NEEDED function
-    import { randomString } from "helperfunc" // ES6 import/export syntax
-    // const { randomBool } = require("helperfunc") // CommonJS syntax
+// Get a random string, then log it.
 
-    const EpicRandomString: string = randomString(10) // Call the function
+// Import the NEEDED function
+import { randomString } from "helperfunc"; // ES6 import/export syntax
+// const { randomBool } = require("helperfunc") // CommonJS syntax
 
-    console.log(EpicRandomString) // Log it
+const EpicRandomString: string = randomString(10); // Call the function
+
+console.log(EpicRandomString); // Log it
 ```
 
 Hope you all like it! (P.S: More functions will definitely come.)
