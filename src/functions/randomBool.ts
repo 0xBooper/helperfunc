@@ -1,6 +1,7 @@
-export default function randomBool (singleDigitProbability: number): boolean {
+export default function randomBool (singleDigitProbability: number): boolean | null {
     if (singleDigitProbability > 9) {
-        throw new Error("Parameter must be single digit.")
+        console.error("Parameter should be single digit.")
+        return null
     }
 
     return Math.random() < singleDigitProbability / 10
