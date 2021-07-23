@@ -1,0 +1,28 @@
+name: Helperfunc Continuous Integration
+
+on:
+  pull_request: 
+    branches: [main]
+      
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+      - uses: actions/checkout@v2
+
+      - name: Use NodeJS
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+        
+      - name: Install packages
+      - run: yarn install --frozen-lockfile
+
+      - name: Test everything
+      - run: yarn test
+
+      
