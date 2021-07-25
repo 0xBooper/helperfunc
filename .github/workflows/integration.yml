@@ -1,4 +1,4 @@
-name: Helperfunc Continuous Integration
+name: Helperfunc-Continuous-Integration
 
 on:
   pull_request:
