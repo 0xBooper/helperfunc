@@ -6,6 +6,10 @@
     "files": [
         "lib/**/*"
     ],
+    "keywords": [
+        "typescript",
+        "helper-functions"
+    ],
     "scripts": {
         "test": "jest",
         "build": "tsc",
