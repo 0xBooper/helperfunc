@@ -8,6 +8,7 @@ They will be in the close future. The list of things to do is in the
 
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/0xBooper/helperfunc/main?label=version&logo=npm&style=flat-square)
 [![Build Status](https://travis-ci.com/0xBooper/helperfunc.svg?branch=main)](https://travis-ci.com/0xBooper/helperfunc)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc?ref=badge_shield)
 
 A collection of handy helper functions.
 
@@ -54,3 +55,7 @@ console.log(EpicRandomString); // Log it
 ```
 
 Hope you all like it! (P.S: More functions will definitely come.)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc?ref=badge_large)
