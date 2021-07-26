@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy_to_npm:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,15 +18,41 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14
-          registry-url: "https://registry.npmjs.org"
 
-      - name: Install packages
+      - name: Install everything
         run: yarn install --frozen-lockfile
 
-      - name: Build the source code
+      - name: Build the code
         run: yarn build
 
+  deploy_to_npm:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Set up node to publish to the NPM registry
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+          registry-url: "https://registry.npmjs.org"
+
       - name: Publish to NPM
+        run: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+
+  deploy_to_gpr:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Setup node to publish to the Github Package Registry
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+          registry-url: "https://npm.pkg.github.com"
+
+      - name: Publish to GPR
         run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
