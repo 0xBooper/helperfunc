@@ -1,7 +1,8 @@
 # WARNING:
 
 This repo is under development. Two of the three promised functions have not been implemented yet.
-They will be in the close future. The list of things to do is in the Github projects tab.
+They will be in the close future. The list of things to do is in the
+[github project.](https://github.com/0xBooper/helperfunc/projects/1)
 
 # helperfunc
 
