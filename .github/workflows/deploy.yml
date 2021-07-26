@@ -3,8 +3,11 @@ name: helperfunc Continuous Deployment
 on:
   release:
     types: [published]
+
+  workflow_dispatch:
+
 jobs:
-  build:
+  deploy_to_npm:
     runs-on: ubuntu-latest
 
     steps:
