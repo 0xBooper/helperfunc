@@ -6,7 +6,7 @@ They will be in the close future. The list of things to do is in the Github proj
 # helperfunc
 
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/0xBooper/helperfunc/main?label=version&logo=npm&style=flat-square)
-![GitHub branch checks state](https://img.shields.io/github/checks-status/0xBooper/helperfunc/main?label=checks&logo=github)
+[![Build Status](https://travis-ci.com/0xBooper/helperfunc.svg?branch=main)](https://travis-ci.com/0xBooper/helperfunc)
 
 A collection of handy helper functions.
 
