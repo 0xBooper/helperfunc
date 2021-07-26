@@ -30,6 +30,9 @@ jobs:
     needs: build
 
     steps:
+      - name: Checkout the code
+        uses: actions/checkout@v2
+
       - name: Set up node to publish to the NPM registry
         uses: actions/setup-node@v1
         with:
@@ -46,6 +49,9 @@ jobs:
     needs: build
 
     steps:
+      - name: Checkout the code
+        uses: actions/checkout@v2
+
       - name: Setup node to publish to the Github Package Registry
         uses: actions/setup-node@v1
         with:
