@@ -1,6 +1,6 @@
 {
     "name": "helperfunc",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "A collection of useful helper functions, able to be used in any circumstance.",
     "main": "lib/index.js",
     "files": [
