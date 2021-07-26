@@ -1,9 +1,3 @@
-# WARNING:
-
-This repo is under development. Two of the three promised functions have not been implemented yet.
-They will be in the close future. The list of things to do is in the
-[github project.](https://github.com/0xBooper/helperfunc/projects/1)
-
 # helperfunc | ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/0xBooper/helperfunc/main?label=version&logo=npm&style=flat-square) [![Build Status](https://travis-ci.com/0xBooper/helperfunc.svg?branch=main)](https://travis-ci.com/0xBooper/helperfunc) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc?ref=badge_shield)
 
 A collection of handy helper functions.
@@ -18,7 +12,23 @@ Some of these functions are:
 Because this is all built in Typescript, you'll get useful intellisense and IDE documentation! (if you use an IDE that has those)
 However, this will still work in Javascript.
 
-# Examples of usage:
+## Installation
+
+You can run this:
+
+```bash
+npm install helperfunc
+```
+
+Or you can run:
+
+```bash
+yarn add helperfunc
+```
+
+Depending on whether you use yarn or npm.
+
+## Examples of usage:
 
 Javascript Example:
 
@@ -50,8 +60,15 @@ const EpicRandomString: string = randomString(10); // Call the function
 console.log(EpicRandomString); // Log it
 ```
 
-Hope you all like it! (P.S: More functions will definitely come.)
+## Status of functions:
+
+The roadmap of stuff to add can be found
+[here](https://github.com/0xBooper/helperfunc/projects/1)
 
 ## License
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc?ref=badge_large)
+
+---
+
+Hope you all like it! More stuff is coming soon!
