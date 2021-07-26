@@ -1,3 +1,3 @@
-export default function  lastArrayElement <TArrayType> ( array: Array<TArrayType> ): TArrayType {
-    return array[array.length - 1]
-}
+const lastArrayElement = <TArrayType> (array: Array<TArrayType>): TArrayType => array[array.length - 1]
+
+export default lastArrayElement
