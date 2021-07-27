@@ -1,4 +1,4 @@
-name: helperfunc Continuous Deployment
+name: helperfunc CD
 
 on:
   release:
@@ -7,65 +7,23 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  publish_to_npm:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
 
-      - name: Set up node
+      - name: Setup Node
         uses: actions/setup-node@v2
-        with:
-          node-version: 14.x
 
-      - name: Install everything
+      - name: Install all dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Build the code
+      - name: Build source code
         run: yarn build
 
-  deploy_to_npm:
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Checkout the code
-        uses: actions/checkout@v2
-
-      - name: Set up node to publish to the NPM registry
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14.x
-          registry-url: "https://registry.npmjs.org"
-
-      - name: Install everything
-        run: yarn install --frozen-lockfile
-
       - name: Publish to NPM
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
-
-  deploy_to_gpr:
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Checkout the code
-        uses: actions/checkout@v2
-
-      - name: Setup node to publish to the Github Package Registry
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14.x
-          registry-url: "https://npm.pkg.github.com"
-          scope: "@0xBooper"
-
-      - name: Install stuffs
-        run: yarn install --frozen-lockfile
-
-      - name: Publish to GPR
-        run: npm publish
+        run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
