@@ -18,7 +18,7 @@
         "prepublishOnly": "npm test"
     },
     "repository": "https://github.com/0xBooper/helperfunc.git",
-    "author": "0xBooper <77999320+0xBooper@users.noreply.github.com>",
+    "author": "0xBooper <yourhighboopness@gmail.com>",
     "license": "MIT",
     "devDependencies": {
         "@jest/types": "^27.0.6",
