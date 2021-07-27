@@ -1,4 +1,5 @@
-# helperfunc | ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/0xBooper/helperfunc/main?label=version&logo=npm&style=flat-square) [![Build Status](https://travis-ci.com/0xBooper/helperfunc.svg?branch=main)](https://travis-ci.com/0xBooper/helperfunc) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc?ref=badge_shield)
+# helperfunc | functions that can help
+# ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/0xBooper/helperfunc/main?label=version&logo=npm&style=flat-square) [![Build Status](https://travis-ci.com/0xBooper/helperfunc.svg?branch=main)](https://travis-ci.com/0xBooper/helperfunc) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc?ref=badge_shield) ![npm](https://img.shields.io/npm/dt/helperfunc?logo=npm&style=flat-square)
 
 A collection of handy helper functions.
 
@@ -59,6 +60,9 @@ const EpicRandomString: string = randomString(10); // Call the function
 
 console.log(EpicRandomString); // Log it
 ```
+
+## Official Documentation:
+Documentation can be found [here.](https://0xBooper.github.io/helperfunc)
 
 ## Status of functions:
 
