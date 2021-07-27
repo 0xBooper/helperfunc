@@ -1,6 +1,6 @@
-# helperfunc | ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/0xBooper/helperfunc/main?label=version&logo=npm&style=flat-square) [![Build Status](https://travis-ci.com/0xBooper/helperfunc.svg?branch=main)](https://travis-ci.com/0xBooper/helperfunc) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc?ref=badge_shield)
+<h1 align="center">functions that help</h1>
 
-> functions that help
+# helperfunc | ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/0xBooper/helperfunc/main?label=version&logo=npm&style=flat-square) [![Build Status](https://travis-ci.com/0xBooper/helperfunc.svg?branch=main)](https://travis-ci.com/0xBooper/helperfunc) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F0xBooper%2Fhelperfunc?ref=badge_shield)
 
 Helperfunc is a collection of pretty useful functions that can be used anywhere, in any situation.
 
