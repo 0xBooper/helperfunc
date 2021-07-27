@@ -15,9 +15,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set up node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 14.x
 
       - name: Install everything
         run: yarn install --frozen-lockfile
@@ -34,16 +34,16 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set up node to publish to the NPM registry
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 14.x
           registry-url: "https://registry.npmjs.org"
 
       - name: Install everything
         run: yarn install --frozen-lockfile
 
       - name: Publish to NPM
-        run: yarn publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
@@ -56,15 +56,15 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Setup node to publish to the Github Package Registry
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 14.x
           registry-url: "https://npm.pkg.github.com"
 
       - name: Install stuffs
         run: yarn install --frozen-lockfile
 
       - name: Publish to GPR
-        run: yarn publish
+        run: npm publish
         env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
