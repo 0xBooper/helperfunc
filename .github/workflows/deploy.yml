@@ -47,6 +47,8 @@ jobs:
 
       - name: Setup yarn to publish to GPR
         run: yarn config set npmPublishRegistry "https://npm.pkg.github.com"
+
+      - name: Tell yarn what the auth token is
         run: yarn config set npmAuthToken "${{ secrets.GITHUB_TOKEN }}"
 
       - name: Install everything
