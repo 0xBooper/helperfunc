@@ -7,6 +7,8 @@
     <img alt="npm" src="https://img.shields.io/npm/dt/helperfunc?logo=npm">
 </div>
 
+---
+
 Helperfunc is a collection of pretty useful functions that can be used anywhere, in any situation.
 
 This documentation covers how to use each function, and how to install it.
