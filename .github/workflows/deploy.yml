@@ -16,6 +16,9 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v2
+        with:
+          node_version: 14.x
+          registry-url: https://registry.npmjs.org
 
       - name: Install all dependencies
         run: yarn install --frozen-lockfile
@@ -25,5 +28,30 @@ jobs:
 
       - name: Publish to NPM
         run: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+
+  publish_to_gpr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v2
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node_version: 14.x
+          registry_url: https://npm.pkg.github.com
+          scope: "@0xBooper"
+
+      - name: Install everything
+        run: yarn install --frozen-lockfile
+
+      - name: Build the code
+        run: yarn build
+
+      - name: Publish to Github Package Registry (GPR)
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
