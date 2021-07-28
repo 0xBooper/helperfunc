@@ -59,3 +59,5 @@ jobs:
 
       - name: Publish to Github Package Registry (GPR)
         run: yarn publish
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
