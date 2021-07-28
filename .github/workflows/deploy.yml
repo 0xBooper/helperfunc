@@ -41,9 +41,13 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v2
         with:
-          node_version: 14.x
-          registry_url: https://npm.pkg.github.com
+          node-version: 14.x
           scope: "@0xBooper"
+          always-auth: true
+
+      - name: Setup yarn to publish to GPR
+        run: yarn config set npmPublishRegistry "https://npm.pkg.github.com"
+        run: yarn config set npmAuthToken "${{ secrets.GITHUB_TOKEN }}"
 
       - name: Install everything
         run: yarn install --frozen-lockfile
@@ -52,6 +56,4 @@ jobs:
         run: yarn build
 
       - name: Publish to Github Package Registry (GPR)
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: yarn publish
