@@ -44,3 +44,4 @@ These are pieces of documentation about each function (in the latest version).
 - [lastArrayElement()](./functions/lastArrayElement.md)
 - [randomBool()](./functions/randomBool.md)
 - [randomString()](./functions/randomString.md)
+- [randomRange()](./functions/randomRange.md)
