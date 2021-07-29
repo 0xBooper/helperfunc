@@ -29,7 +29,17 @@ NPM:
 npm install helperfunc
 ```
 
+## What IS helperfunc? How is it useful?
+
+Helperfunc is a collection of various functions I find important, if you want, you can call it a
+library. These functions can be really useful, in any circumstance. You can use it with both
+Typescript and Javascript, and it should run on the browser, and of course in NodeJS apps.
+Because helperfunc is created with Typescript, you'll also get sweet definition intellisense
+in your IDE. I plan to expand this a lot, adding more functions, and all that cool jazz.
+
 ## Individual functions
+
+These are pieces of documentation about each function (in the latest version).
 
 - [lastArrayElement()](./functions/lastArrayElement.md)
 - [randomBool()](./functions/randomBool.md)
