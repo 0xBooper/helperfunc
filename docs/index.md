@@ -33,3 +33,4 @@ npm install helperfunc
 
 - [lastArrayElement()](./functions/lastArrayElement.md)
 - [randomBool()](./functions/randomBool.md)
+- [randomString()](./functions/randomString.md)
