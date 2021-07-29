@@ -13,7 +13,7 @@ A collection of handy helper functions.
 
 Some of these functions are:
 
-- A function that generates a random string based on a given length (`randomString(lengthOfString: number)`) (**not added yet**)
+- A function that generates a random string based on a given length (`randomString(lengthOfString: number)`) 
 - A function that gets the last element of a given array (`lastArrayElement(array)`)
 - A function that generates a random true/false bool, based on a given single digit probability (`randomBool(singleDigitProbability: number)`)
 - ...and more to come!
