@@ -1,0 +1,22 @@
+name: Function Suggestion
+description: Suggest a possible function to add
+title: "new function: "
+labels: function suggestion
+assignees: 0xBooper
+
+body:
+  - type: textarea
+    attributes:
+      label: "Explain what the function should do."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Give a possible function signature. (Optional, but helpful for implementation)"
+      description: "A signature preferably written in Typescript"
+
+  - type: textarea
+    attributes:
+      label: "Any other stuff 0xBooper should know"
+    
